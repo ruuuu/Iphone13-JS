@@ -69,4 +69,15 @@ sendForm();
 // Статус 201 - успешная отпрака данных
 // Статус 200 - успешное получение данных
 
+// если ОС блокирует обращение к локальным файлам(db.json) и не получается к ним обратиться:
+//  для этого есть обланчй сервис Firebase: куда можно импортировать json файл 
+// и обращаться уже к файлу по урлу через firebase:
+// fetch('./db.json')
+//      .then((response) => {response.json()})
+// в лок файле db.json поправить: 
+//  { "db": <содержиоме файла> }
+// переходим на https://console.firebase.google.com/ -> Create roject -> Continue ->  Continue -> Create Project -> Continue
+// -> Realtime Database (в левом меню) -> Create Database -> Next -> Test mode(toggler) -> нвжать Троеточие(вверху справа) -> Import JSON ->
+// -> копирем урл  к базе и добавляепм в путь /db.json (будет типа https://iphone12-5ed8b-default-rtdb.firebaseio.com/db.json) ->
+// -> и всатвляем  этот урл в fetch()
 
