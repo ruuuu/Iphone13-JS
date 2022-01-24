@@ -26,4 +26,4 @@ const accordeon = () => {
     });
 }
 
-accordeon(); 
+accordeon();  //замкнули код в  фукнцию accordeon()
